@@ -10,7 +10,6 @@
 #ResNet: https://towardsdatascience.com/an-overview-of-resnet-and-its-variants-5281e2f56035
 #Code repo: https://github.com/spmallick/learnopencv/tree/master/app-seperation-semseg
 
-#Code unchanged from repo.
 #Above comments by Yaseen Moolla. (Date: Sunday, 2021-03-14)
 
 
@@ -88,7 +87,7 @@ def decode_segmap(image, source, nc=21):
   # Return a normalized output image for display
   return outImage/255
 
-def segment(net, img, show_orig=True, dev='cpu'):
+def segment(net, img, show_orig=True, dev='cpu'): #dev='cuda' if using CUDA enabled graphics card for faster processing
   #img = Image.open(path)
   #if show_orig: plt.imshow(img); plt.axis('off'); plt.show()
   # Comment the Resize and CenterCrop for better inference results
