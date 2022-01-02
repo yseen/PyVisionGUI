@@ -1,8 +1,5 @@
 #Background removal using Deep Learning Semantic Segmentation
-#NOTE: downloading of segmentation model keeps crashing.
-#Might have been temporary server issue (weekend maintenance?),
-#or might be local environment varibles stopping large file downloads:
-#Download buffer too small? But cut off at random download percentages? Requires further investigation.
+#NOTE: Run from command line and not from Idle. Idle memory buffer not big enough to download the model for first time usage. It will crash.
 
 #Explanations of code:
 #Semantic Segmentataion: https://learnopencv.com/applications-of-foreground-background-separation-with-semantic-segmentation/
@@ -11,6 +8,7 @@
 #Code repo: https://github.com/spmallick/learnopencv/tree/master/app-seperation-semseg
 
 #Above comments by Yaseen Moolla. (Date: Sunday, 2021-03-14)
+#Updated: 2022-01-02
 
 
 from torchvision import models
